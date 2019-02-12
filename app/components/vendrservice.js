@@ -6,7 +6,8 @@
 import VendingMachine from '../models/vendingMachine.js'
 let vendingMachine = new VendingMachine()
 
-let _buyer = new Buyer('Steven');
+let Snacks = vendingMachine.snacks
+
 
 
 
@@ -15,10 +16,10 @@ export default class VendrService {
   constructor() {
   }
   get Balance() {
-    return _buyer.balance
+    return vendingMachine.bal
   }
-
   addQuarter() {
-    _buyer.balance += .25
+    vendingMachine.bal += .25
+
   }
 }

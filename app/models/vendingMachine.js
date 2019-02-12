@@ -1,4 +1,4 @@
-import Snack from "./snack";
+import Snack from "./snack.js";
 
 export default class VendingMachine {
   constructor() {
@@ -7,5 +7,6 @@ export default class VendingMachine {
       a2: new Snack(),
       a3: new Snack()
     }
+    this.bal = 0
   }
 }
