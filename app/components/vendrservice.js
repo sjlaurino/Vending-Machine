@@ -6,7 +6,7 @@
 import VendingMachine from '../models/vendingMachine.js'
 let vendingMachine = new VendingMachine()
 
-let Snacks = vendingMachine.snacks
+let snacks = vendingMachine.snacks
 
 
 
@@ -20,6 +20,13 @@ export default class VendrService {
   }
   addQuarter() {
     vendingMachine.bal += .25
-
+  }
+  purchase(itemNum) {
+    let target = snacks[itemNum]
+    if (target.price <= vendingMachine.bal) {
+      return vendingMachine.bal -= target.price
+    } else {
+      alert('insufficient funds')
+    }
   }
 }

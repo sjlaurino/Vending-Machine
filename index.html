@@ -24,14 +24,18 @@
           <img class="img1"
             src="https://www.fritolay.com/images/default-source/blue-bag-image/cheetos-crunchy-cheese.png?sfvrsn=5951573a_2"
             class="card-img-top" alt="...">
-          <div class="card-body"> <a href="#" class="btn btn-primary d-flex justify-content-center">A1</a>
+          <h4 id="itemPrice"></h4>
+          <div class="card-body"> <a onclick="app.controllers.vendrController.purchase('a1')" href="#"
+              class="btn btn-primary d-flex justify-content-center">A1</a>
           </div>
         </div>
       </div>
       <div class="col-4 d-flex justify-content-center mt-5">
         <div class="card" style="width: 18rem;">
           <img class="img2" src="https://pics.drugstore.com/prodimg/417633/450.jpg" class="card-img-top" alt="...">
-          <div class="card-body"> <a href="#" class="btn btn-primary d-flex justify-content-center">A2</a>
+          <h4 id="itemPrice"></h4>
+          <div class="card-body"> <a onclick="app.controllers.vendrController.purchase('a2')" href="#"
+              class="btn btn-primary d-flex justify-content-center">A2</a>
           </div>
         </div>
       </div>
@@ -40,18 +44,20 @@
           <img class="img3"
             src="https://s.yimg.com/ny/api/res/1.2/b7a9CvHEBd01EdDlcp54Cw--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/http://media.zenfs.com/en-US/homerun/galvanized/1bc13067cb9c37ec10b8daad17ffc723"
             class="card-img-top" alt="...">
-          <div class="card-body"> <a href="#" class="btn btn-primary d-flex justify-content-center">A3</a>
+          <h4 id="itemPrice"></h4>
+          <div class="card-body"> <a onclick="app.controllers.vendrController.purchase('a3')" href="#"
+              class="btn btn-primary d-flex justify-content-center">A3</a>
           </div>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col">
-        <h3 class="text-center mt-3" id="bal">Balance: --</h3>
+        <h3 class="mt-3" id="bal">Balance: --</h3>
       </div>
     </div>
     <div class="row">
-      <div class="col d-flex justify-content-center mt-5">
+      <div class="col d-flex justify-content-start mt-5">
         <button onclick="app.controllers.vendrController.addQuarter()" type="button" class="btn btn-success">
           Add Quarter</button>
       </div>

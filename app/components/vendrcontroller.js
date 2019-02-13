@@ -11,6 +11,10 @@ function draw() {
 
   let b = vendrServ.Balance
   document.getElementById('bal').innerText = 'Balance:$ ' + b.toFixed(2)
+
+  let chooseSnack = vendrServ.purchase
+  console.log('bingo')
+
 }
 
 
@@ -22,4 +26,11 @@ export default class VendrController {
     vendrServ.addQuarter()
     draw()
   }
+
+  purchase(itemNum) {
+    let itemImg = vendrServ.purchase(itemNum)
+
+    draw()
+  }
+
 }
